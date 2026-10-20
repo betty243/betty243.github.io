@@ -1,0 +1,10 @@
+{
+  "siteName": "Urban Cart",
+  "tagline": "Simple, quality products delivered to your door",
+  "currency": "₹",
+  "email": "support@yourdomain.com",
+  "phone": "+91 00000 00000",
+  "address": "Your full business address, City, State, PIN, India",
+  "freeShippingAbove": 999,
+  "shippingFee": 49
+}

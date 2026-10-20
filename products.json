@@ -1,0 +1,12 @@
+[
+  {"id":1,"name":"Wireless Headphones","price":1999,"old":2799,"icon":"fa-headphones","color":"#6366f1","desc":"Over-ear Bluetooth headphones with deep bass and 30 hours of battery."},
+  {"id":2,"name":"Classic Analog Watch","price":1499,"old":1999,"icon":"fa-clock","color":"#0ea5e9","desc":"Minimal stainless steel watch with a genuine leather strap."},
+  {"id":3,"name":"Everyday Backpack","price":1299,"old":1799,"icon":"fa-bag-shopping","color":"#f59e0b","desc":"Water-resistant 25L backpack with a padded laptop compartment."},
+  {"id":4,"name":"UV Protect Sunglasses","price":799,"old":1199,"icon":"fa-glasses","color":"#10b981","desc":"Lightweight polarized sunglasses with 100% UV protection."},
+  {"id":5,"name":"Steel Water Bottle","price":599,"old":899,"icon":"fa-bottle-water","color":"#14b8a6","desc":"Insulated 750ml bottle keeps drinks cold 24h and hot 12h."},
+  {"id":6,"name":"Compact Keyboard","price":1699,"old":2299,"icon":"fa-keyboard","color":"#8b5cf6","desc":"Slim wireless keyboard with quiet keys, works with all devices."},
+  {"id":7,"name":"Ceramic Coffee Mug","price":349,"old":499,"icon":"fa-mug-hot","color":"#ef4444","desc":"350ml matte ceramic mug, microwave and dishwasher safe."},
+  {"id":8,"name":"Cotton Crew T-Shirt","price":549,"old":799,"icon":"fa-shirt","color":"#ec4899","desc":"Soft 100% combed cotton t-shirt with a relaxed everyday fit."},
+  {"id":9,"name":"Running Shoes","price":2299,"old":3199,"icon":"fa-shoe-prints","color":"#f97316","desc":"Breathable lightweight running shoes with cushioned soles."},
+  {"id":10,"name":"Fast Charging Power Bank","price":1199,"old":1599,"icon":"fa-mobile-screen","color":"#3b82f6","desc":"10000mAh slim power bank with 20W fast charging."}
+]

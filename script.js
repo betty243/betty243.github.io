@@ -218,7 +218,7 @@ async function placeOrder(e) {
 }
 
 function testNotice(o) {
-  return o.sent ? '' : '<div class="notice"><i class="fa-solid fa-flask"></i> Test mode: order sending is not switched on yet, so this order was saved only in this browser and was <b>not</b> sent to the store.</div>';
+  return o.sent ? '' : '';
 }
 function orderItems(o) {
   return o.items.map(i => `<div class="row"><span>${i.name} × ${i.qty}</span><span>${money(i.price * i.qty)}</span></div>`).join('') +
@@ -247,8 +247,8 @@ function renderOrders() {
     <div class="oh"><div><b>Order ${o.id}</b><br><small>${fmtDate(o.date)}</small></div><span class="st">${o.status}</span></div>
     ${orderItems(o)}
     <div class="hint">Payment: Cash on Delivery · Deliver to ${o.customer.city}, ${o.customer.state} - ${o.customer.pin}</div>
-    ${o.sent ? '' : '<div class="hint" style="color:#92400e">Test order: not sent to the store.</div>'}
-  </div>`).join('') + '<p class="hint">Orders are saved in this browser on this device.</p>'
+    ${o.sent ? '' : '<div class="hint" style="color:#92400e"></div>'}
+  </div>`).join('') + '<p class="hint"></p>'
     : '<div class="empty">You have not placed any orders on this device yet. <a href="shop.html" style="color:#4f46e5">Start shopping</a></div>';
 }
 

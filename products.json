@@ -175,11 +175,8 @@
             "Compatibility": "Windows, macOS, Android, iOS"
         },
         "images": [
-            "images/p6-1.svg",
-            "images/p6-2.svg",
-            "images/p6-3.svg",
-            "images/p6-4.svg",
-            "images/p6-5.svg"
+            "images/keyboard1.png",
+            "images/keyboard2.png"
         ]
     },
     {
@@ -262,11 +259,8 @@
             "Use": "Running, walking, gym"
         },
         "images": [
-            "images/p9-1.svg",
-            "images/p9-2.svg",
-            "images/p9-3.svg",
-            "images/p9-4.svg",
-            "images/p9-5.svg"
+            "images/juta1.png",
+            "images/juta2.png"
         ]
     },
     {
@@ -295,11 +289,8 @@
             "In the box": "Power bank, USB-C cable"
         },
         "images": [
-            "images/p10-1.svg",
-            "images/p10-2.svg",
-            "images/p10-3.svg",
-            "images/p10-4.svg",
-            "images/p10-5.svg"
+            "images/bank1.png",
+            "images/bank2.png"
         ]
     }
 ]

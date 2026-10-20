@@ -7,5 +7,6 @@
   "address": "Your full business address, City, State, PIN, India",
   "hours": "Monday to Saturday, 10:00 AM to 6:00 PM IST",
   "freeShippingAbove": 999,
-  "shippingFee": 49
+  "shippingFee": 49,
+  "orderAccessKey": ""
 }

@@ -46,6 +46,8 @@ function renderPage() {
   set('#categories', cats.map(c => `<a class="cat" href="shop.html?cat=${encodeURIComponent(c)}"><i class="fa-solid ${CATICON[c] || 'fa-tag'}"></i><b>${c}</b><small>${PRODUCTS.filter(p => p.category === c).length} products</small></a>`).join(''));
   if ($('#shopGrid')) renderShop(cats);
   if ($('#productDetail')) renderProduct();
+  if ($('#successPage')) renderSuccess();
+  if ($('#ordersList')) renderOrders();
   if ($('#cartPage')) renderCartPage();
   if ($('#checkoutPage')) renderCheckout();
 }
@@ -169,20 +171,85 @@ function renderCheckout() {
   $('#summaryTotals').innerHTML = totalsHTML(t);
 }
 
-function placeOrder(e) {
+function newOrderId() { return 'UC' + Date.now().toString(36).toUpperCase() + Math.random().toString(36).slice(2, 5).toUpperCase(); }
+function getOrders() { try { return JSON.parse(localStorage.getItem('orders') || '[]'); } catch (e) { return []; } }
+function fmtDate(d) { return new Date(d).toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' }); }
+
+async function placeOrder(e) {
   e.preventDefault();
   if (!cart.length) { alert('Your cart is empty.'); return; }
-  const btn = $('#payBtn'), err = $('#err');
+  const f = e.target, btn = $('#payBtn'), err = $('#err'), label = btn.innerHTML;
   err.style.display = 'none';
+  const t = totals();
+  const order = {
+    id: newOrderId(), date: new Date().toISOString(), payment: 'Cash on Delivery', status: 'Order Placed',
+    customer: { name: f.cname.value.trim(), phone: f.phone.value.trim(), email: f.email.value.trim(), address: f.address.value.trim(), city: f.city.value.trim(), state: f.state.value.trim(), pin: f.pin.value.trim() },
+    items: cart.map(i => { const p = getP(i.id); return { id: i.id, name: p.name, price: p.price, qty: i.qty }; }),
+    sub: t.sub, ship: t.ship, total: t.total, sent: false
+  };
   btn.disabled = true;
-  btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Please wait...';
-  setTimeout(() => {
+  btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Placing your order...';
+  try {
+    if (CFG.orderAccessKey) {
+      const c = order.customer;
+      const msg = 'Order ID: ' + order.id + '\nPayment: Cash on Delivery\n\nCustomer: ' + c.name + '\nPhone: ' + c.phone + '\nEmail: ' + c.email +
+        '\nAddress: ' + c.address + ', ' + c.city + ', ' + c.state + ' - ' + c.pin + '\n\nItems:\n' +
+        order.items.map(i => '- ' + i.name + ' x ' + i.qty + ' = ' + money(i.price * i.qty)).join('\n') +
+        '\n\nSubtotal: ' + money(order.sub) + '\nShipping: ' + (order.ship ? money(order.ship) : 'Free') + '\nTOTAL TO COLLECT: ' + money(order.total);
+      const r = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({ access_key: CFG.orderAccessKey, subject: 'New COD order ' + order.id + ' - ' + CFG.siteName, from_name: CFG.siteName, name: c.name, email: c.email, phone: c.phone, message: msg })
+      });
+      const j = await r.json();
+      if (!j.success) throw new Error(j.message || 'Request failed');
+      order.sent = true;
+    }
+  } catch (ex) {
     err.style.display = 'block';
-    err.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i> Something went wrong. Online payments are temporarily unavailable while we finish setting up our payment system. No payment has been taken and no order has been placed. Please try again later.';
-    btn.disabled = false;
-    btn.innerHTML = '<i class="fa-solid fa-lock"></i> Place Order';
+    err.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i> We could not place your order right now. Nothing has been ordered. Please check your connection and try again.';
+    btn.disabled = false; btn.innerHTML = label;
     err.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  }, 1800);
+    return;
+  }
+  const orders = getOrders(); orders.unshift(order);
+  try { localStorage.setItem('orders', JSON.stringify(orders)); } catch (e2) {}
+  cart = []; save();
+  location.href = 'order-success.html?id=' + order.id;
+}
+
+function testNotice(o) {
+  return o.sent ? '' : '<div class="notice"><i class="fa-solid fa-flask"></i> Test mode: order sending is not switched on yet, so this order was saved only in this browser and was <b>not</b> sent to the store.</div>';
+}
+function orderItems(o) {
+  return o.items.map(i => `<div class="row"><span>${i.name} × ${i.qty}</span><span>${money(i.price * i.qty)}</span></div>`).join('') +
+    `<div class="row"><span>Shipping</span><span>${o.ship ? money(o.ship) : 'Free'}</span></div><div class="row total"><span>Total (pay on delivery)</span><span>${money(o.total)}</span></div>`;
+}
+function renderSuccess() {
+  const o = getOrders().find(x => x.id === param('id'));
+  const box = $('#successPage');
+  if (!o) { box.innerHTML = '<div class="empty">Order not found on this device. <a href="orders.html" style="color:#4f46e5">View My Orders</a></div>'; return; }
+  box.innerHTML = `<div class="success-box"><div class="tick"><i class="fa-solid fa-check"></i></div>
+    <h1>Order Accepted</h1><p>Thank you, ${o.customer.name}! Your order has been placed successfully.</p>
+    <div class="oid">Order ID: <b>${o.id}</b></div></div>
+    ${testNotice(o)}
+    <div class="box" style="margin-top:18px"><h3>Order details</h3>
+      <div class="row"><span>Placed on</span><span>${fmtDate(o.date)}</span></div>
+      <div class="row"><span>Payment</span><span>Cash on Delivery</span></div>
+      <div class="row"><span>Status</span><span class="st">${o.status}</span></div>
+      <div class="row"><span>Deliver to</span><span style="text-align:right;max-width:60%">${o.customer.address}, ${o.customer.city}, ${o.customer.state} - ${o.customer.pin}</span></div>
+      <div style="margin-top:12px">${orderItems(o)}</div></div>
+    <p class="hint" style="margin:14px 0">We will contact you on ${o.customer.phone} to confirm delivery. Please keep the exact amount ready.</p>
+    <a class="btn" href="orders.html">View My Orders</a> <a class="btn light" href="shop.html">Continue Shopping</a>`;
+}
+function renderOrders() {
+  const orders = getOrders();
+  $('#ordersList').innerHTML = orders.length ? orders.map(o => `<div class="box order-card">
+    <div class="oh"><div><b>Order ${o.id}</b><br><small>${fmtDate(o.date)}</small></div><span class="st">${o.status}</span></div>
+    ${orderItems(o)}
+    <div class="hint">Payment: Cash on Delivery · Deliver to ${o.customer.city}, ${o.customer.state} - ${o.customer.pin}</div>
+    ${o.sent ? '' : '<div class="hint" style="color:#92400e">Test order: not sent to the store.</div>'}
+  </div>`).join('') + '<p class="hint">Orders are saved in this browser on this device.</p>'
+    : '<div class="empty">You have not placed any orders on this device yet. <a href="shop.html" style="color:#4f46e5">Start shopping</a></div>';
 }
 
 document.addEventListener('DOMContentLoaded', init);

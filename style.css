@@ -117,3 +117,11 @@ footer h4{color:#fff;margin-bottom:12px}footer a{display:block;margin:6px 0;colo
 .thumbs{display:flex;gap:10px;margin-top:12px}
 .thumbs img{width:68px;height:68px;border-radius:10px;border:2px solid var(--b);cursor:pointer;object-fit:cover;opacity:.7}
 .thumbs img.on{border-color:var(--a);opacity:1}
+
+.pay-opt{display:flex;gap:12px;align-items:flex-start;border:2px solid var(--a);background:#eef2ff;border-radius:12px;padding:14px 16px}
+.pay-opt input{width:auto;margin-top:5px}.pay-opt small{color:var(--muted)}
+.success-box{text-align:center;background:#fff;border:1px solid var(--b);border-radius:20px;padding:34px 20px}
+.success-box .tick{width:72px;height:72px;border-radius:50%;background:#dcfce7;color:var(--ok);font-size:2rem;display:flex;align-items:center;justify-content:center;margin:0 auto 12px}
+.success-box h1{margin-bottom:6px}.success-box .oid{margin-top:14px;display:inline-block;background:#f1f5f9;padding:8px 16px;border-radius:10px}
+.st{background:#dcfce7;color:#166534;font-weight:600;font-size:.82rem;padding:3px 12px;border-radius:20px;white-space:nowrap}
+.order-card{margin-bottom:16px}.order-card .oh{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid var(--b)}

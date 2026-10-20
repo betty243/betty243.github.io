@@ -55,11 +55,8 @@
             "In the box": "Watch, gift box"
         },
         "images": [
-            "images/p2-1.svg",
-            "images/p2-2.svg",
-            "images/p2-3.svg",
-            "images/p2-4.svg",
-            "images/p2-5.svg"
+            "images/watch1.png",
+            "images/watch2.png"
         ]
     },
     {
@@ -116,8 +113,8 @@
             "In the box": "Sunglasses, hard case, cleaning cloth"
         },
         "images": [
-            "images/p4-1.png",
-            "images/p4-2.png"
+            "images/galss1.png",
+            "images/galss2.png"
         ]
     },
     {

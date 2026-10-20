@@ -25,8 +25,8 @@
             "In the box": "Headphones, USB-C cable, AUX cable, pouch"
         },
         "images": [
-            "images/buds1.png",
-            "images/buds2.png"
+            "images/buds1.webp",
+            "images/buds2.webp"
         ]
     },
     {
@@ -55,8 +55,8 @@
             "In the box": "Watch, gift box"
         },
         "images": [
-            "images/watch1.png",
-            "images/watch2.png"
+            "images/watch1.webp",
+            "images/watch2.webp"
         ]
     },
     {
@@ -85,8 +85,8 @@
             "Dimensions": "46 x 31 x 17 cm"
         },
         "images": [
-            "images/bag1.png",
-            "images/bag2.png"
+            "images/bag1.webp",
+            "images/bag2.webp"
         ]
     },
     {
@@ -113,8 +113,8 @@
             "In the box": "Sunglasses, hard case, cleaning cloth"
         },
         "images": [
-            "images/galss1.png",
-            "images/galss2.png"
+            "images/galss1.webp",
+            "images/galss2.webp"
         ]
     },
     {
@@ -143,8 +143,8 @@
             "Care": "Hand wash recommended"
         },
         "images": [
-            "images/bottel1.png",
-            "images/bottel2.png"
+            "images/bottel1.webp",
+            "images/bottel2.webp"
         ]
     },
     {
@@ -172,8 +172,8 @@
             "Compatibility": "Windows, macOS, Android, iOS"
         },
         "images": [
-            "images/keyboard1.png",
-            "images/keyboard2.png"
+            "images/keyboard1.webp",
+            "images/keyboard2.webp"
         ]
     },
     {
@@ -200,8 +200,8 @@
             "Weight": "340 g"
         },
         "images": [
-            "images/cup1.png",
-            "images/cup2.png"
+            "images/cup1.webp",
+            "images/cup2.webp"
         ]
     },
     {
@@ -228,8 +228,8 @@
             "Care": "Machine wash cold, do not bleach"
         },
         "images": [
-            "images/shirt1.png",
-            "images/shirt2.png"
+            "images/shirt1.webp",
+            "images/shirt2.webp"
         ]
     },
     {
@@ -256,8 +256,8 @@
             "Use": "Running, walking, gym"
         },
         "images": [
-            "images/juta1.png",
-            "images/juta2.png"
+            "images/juta1.webp",
+            "images/juta2.webp"
         ]
     },
     {
@@ -286,8 +286,8 @@
             "In the box": "Power bank, USB-C cable"
         },
         "images": [
-            "images/bank1.png",
-            "images/bank2.png"
+            "images/bank1.webp",
+            "images/bank2.webp"
         ]
     }
 ]

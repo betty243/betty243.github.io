@@ -1,317 +1,317 @@
 [
- {
-  "id": 1,
-  "name": "Wireless Bluetooth Headphones",
-  "category": "Electronics",
-  "price": 1999,
-  "old": 2799,
-  "icon": "fa-headphones",
-  "color": "#6366f1",
-  "sku": "UC-HP-001",
-  "short": "Over-ear Bluetooth headphones with deep bass and 30 hours of battery.",
-  "description": "Comfortable over-ear headphones tuned for rich bass and clear vocals. The soft memory-foam ear cushions and adjustable headband make long listening sessions easy, and the built-in microphone lets you take calls without reaching for your phone. A single charge gives up to 30 hours of playback, and a wired audio cable is included for backup.",
-  "features": [
-   "Bluetooth 5.3 wireless connection",
-   "Up to 30 hours of playback",
-   "Built-in microphone for calls",
-   "Foldable design with carry pouch",
-   "AUX cable included"
-  ],
-  "specs": {
-   "Type": "Over-ear, wireless",
-   "Battery": "30 hours",
-   "Charging": "USB-C, about 2 hours",
-   "Weight": "250 g",
-   "In the box": "Headphones, USB-C cable, AUX cable, pouch"
-  },
-  "images": [
-   "images/p1-1.svg",
-   "images/p1-2.svg",
-   "images/p1-3.svg",
-   "images/p1-4.svg",
-   "images/p1-5.svg"
-  ]
- },
- {
-  "id": 2,
-  "name": "Classic Analog Wrist Watch",
-  "category": "Accessories",
-  "price": 1499,
-  "old": 1999,
-  "icon": "fa-clock",
-  "color": "#0ea5e9",
-  "sku": "UC-WT-002",
-  "short": "Minimal stainless steel watch with a genuine leather strap.",
-  "description": "A clean, minimal analog watch that suits both office and casual wear. The stainless steel case is paired with a genuine leather strap and a scratch-resistant glass face. Quartz movement keeps accurate time, and the watch is splash resistant for everyday use.",
-  "features": [
-   "Stainless steel case",
-   "Genuine leather strap",
-   "Scratch-resistant glass",
-   "Quartz movement",
-   "Splash resistant"
-  ],
-  "specs": {
-   "Case size": "40 mm",
-   "Strap": "Genuine leather, 20 mm",
-   "Movement": "Quartz",
-   "Water resistance": "Splash resistant (not for swimming)",
-   "In the box": "Watch, gift box"
-  },
-  "images": [
-   "images/p2-1.svg",
-   "images/p2-2.svg",
-   "images/p2-3.svg",
-   "images/p2-4.svg",
-   "images/p2-5.svg"
-  ]
- },
- {
-  "id": 3,
-  "name": "Everyday Laptop Backpack 25L",
-  "category": "Accessories",
-  "price": 1299,
-  "old": 1799,
-  "icon": "fa-bag-shopping",
-  "color": "#f59e0b",
-  "sku": "UC-BP-003",
-  "short": "Water-resistant 25L backpack with a padded laptop compartment.",
-  "description": "A practical 25 litre backpack for work, college and short trips. The padded compartment fits laptops up to 15.6 inches, and the water-resistant fabric protects your things in light rain. Multiple pockets keep chargers, bottles and documents organised, while padded straps spread the weight comfortably.",
-  "features": [
-   "Fits laptops up to 15.6 inches",
-   "Water-resistant fabric",
-   "Padded shoulder straps and back panel",
-   "Multiple organiser pockets",
-   "Side pockets for bottles"
-  ],
-  "specs": {
-   "Capacity": "25 litres",
-   "Material": "Water-resistant polyester",
-   "Laptop size": "Up to 15.6 inches",
-   "Weight": "600 g",
-   "Dimensions": "46 x 31 x 17 cm"
-  },
-  "images": [
-   "images/p3-1.svg",
-   "images/p3-2.svg",
-   "images/p3-3.svg",
-   "images/p3-4.svg",
-   "images/p3-5.svg"
-  ]
- },
- {
-  "id": 4,
-  "name": "UV Protection Polarized Sunglasses",
-  "category": "Accessories",
-  "price": 799,
-  "old": 1199,
-  "icon": "fa-glasses",
-  "color": "#10b981",
-  "sku": "UC-SG-004",
-  "short": "Lightweight polarized sunglasses with 100% UV protection.",
-  "description": "Lightweight sunglasses with polarized lenses that cut glare and block harmful UV rays. The flexible frame is comfortable for all-day wear and works well for driving, travel and outdoor activities. A protective case and cleaning cloth are included.",
-  "features": [
-   "Polarized lenses reduce glare",
-   "100% UV400 protection",
-   "Lightweight flexible frame",
-   "Case and cloth included"
-  ],
-  "specs": {
-   "Lens": "Polarized, UV400",
-   "Frame": "Lightweight TR90",
-   "Weight": "28 g",
-   "In the box": "Sunglasses, hard case, cleaning cloth"
-  },
-  "images": [
-   "images/p4-1.png",
-   "images/p4-2.png"
-  ]
- },
- {
-  "id": 5,
-  "name": "Insulated Steel Water Bottle 750ml",
-  "category": "Home & Kitchen",
-  "price": 599,
-  "old": 899,
-  "icon": "fa-bottle-water",
-  "color": "#14b8a6",
-  "sku": "UC-WB-005",
-  "short": "Double-wall insulated bottle keeps drinks cold 24h and hot 12h.",
-  "description": "A durable stainless steel bottle with double-wall vacuum insulation that keeps water cold for up to 24 hours and hot drinks warm for up to 12 hours. The leak-proof lid and powder-coated body make it ideal for the gym, office or travel.",
-  "features": [
-   "Keeps cold for 24 hours, hot for 12 hours",
-   "Food-grade stainless steel",
-   "Leak-proof lid",
-   "Powder-coated grip finish",
-   "BPA free"
-  ],
-  "specs": {
-   "Capacity": "750 ml",
-   "Material": "304 stainless steel",
-   "Insulation": "Double-wall vacuum",
-   "Weight": "380 g",
-   "Care": "Hand wash recommended"
-  },
-  "images": [
-   "images/bottel1.png",
-   "images/bottel2.png",
-  ]
- },
- {
-  "id": 6,
-  "name": "Slim Wireless Keyboard",
-  "category": "Electronics",
-  "price": 1699,
-  "old": 2299,
-  "icon": "fa-keyboard",
-  "color": "#8b5cf6",
-  "sku": "UC-KB-006",
-  "short": "Slim wireless keyboard with quiet keys, works with all devices.",
-  "description": "A slim, quiet keyboard that connects over Bluetooth to laptops, tablets and phones and can switch between devices. Low-profile keys feel comfortable for long typing sessions, and a rechargeable battery lasts for weeks on a single charge.",
-  "features": [
-   "Bluetooth connection to up to 3 devices",
-   "Quiet low-profile keys",
-   "Rechargeable battery",
-   "Works with Windows, macOS, Android and iOS"
-  ],
-  "specs": {
-   "Connection": "Bluetooth 5.0",
-   "Battery": "Rechargeable, up to 3 weeks",
-   "Layout": "Full size with number pad",
-   "Weight": "480 g",
-   "Compatibility": "Windows, macOS, Android, iOS"
-  },
-  "images": [
-   "images/p6-1.svg",
-   "images/p6-2.svg",
-   "images/p6-3.svg",
-   "images/p6-4.svg",
-   "images/p6-5.svg"
-  ]
- },
- {
-  "id": 7,
-  "name": "Matte Ceramic Coffee Mug",
-  "category": "Home & Kitchen",
-  "price": 349,
-  "old": 499,
-  "icon": "fa-mug-hot",
-  "color": "#ef4444",
-  "sku": "UC-MG-007",
-  "short": "350ml matte ceramic mug, microwave and dishwasher safe.",
-  "description": "A sturdy 350 ml ceramic mug with a smooth matte finish and a comfortable handle. It holds heat well, is safe for both the microwave and the dishwasher, and looks good on any desk or kitchen shelf.",
-  "features": [
-   "Smooth matte finish",
-   "Microwave and dishwasher safe",
-   "Comfortable wide handle",
-   "Lead-free glaze"
-  ],
-  "specs": {
-   "Capacity": "350 ml",
-   "Material": "Ceramic",
-   "Care": "Microwave and dishwasher safe",
-   "Weight": "340 g"
-  },
-  "images": [
-   "images/p7-1.svg",
-   "images/p7-2.svg",
-   "images/p7-3.svg",
-   "images/p7-4.svg",
-   "images/p7-5.svg"
-  ]
- },
- {
-  "id": 8,
-  "name": "Combed Cotton Crew T-Shirt",
-  "category": "Fashion",
-  "price": 549,
-  "old": 799,
-  "icon": "fa-shirt",
-  "color": "#ec4899",
-  "sku": "UC-TS-008",
-  "short": "Soft 100% combed cotton t-shirt with a relaxed everyday fit.",
-  "description": "A soft, breathable t-shirt made from 100% combed cotton. The relaxed regular fit and reinforced stitching keep it comfortable and long lasting through repeated washes, making it an easy everyday basic.",
-  "features": [
-   "100% combed cotton",
-   "Regular relaxed fit",
-   "Reinforced neck and seams",
-   "Machine washable"
-  ],
-  "specs": {
-   "Fabric": "100% combed cotton, 180 GSM",
-   "Fit": "Regular",
-   "Neck": "Crew neck",
-   "Care": "Machine wash cold, do not bleach"
-  },
-  "images": [
-   "images/p8-1.svg",
-   "images/p8-2.svg",
-   "images/p8-3.svg",
-   "images/p8-4.svg",
-   "images/p8-5.svg"
-  ]
- },
- {
-  "id": 9,
-  "name": "Lightweight Running Shoes",
-  "category": "Footwear",
-  "price": 2299,
-  "old": 3199,
-  "icon": "fa-shoe-prints",
-  "color": "#f97316",
-  "sku": "UC-SH-009",
-  "short": "Breathable lightweight running shoes with cushioned soles.",
-  "description": "Lightweight running shoes with a breathable mesh upper and a cushioned midsole that absorbs impact on every stride. The grippy outsole holds well on roads and tracks, making these suitable for daily runs, walks and gym sessions.",
-  "features": [
-   "Breathable mesh upper",
-   "Cushioned midsole",
-   "Grippy rubber outsole",
-   "Lightweight build"
-  ],
-  "specs": {
-   "Upper": "Breathable mesh",
-   "Sole": "EVA midsole, rubber outsole",
-   "Weight": "About 280 g per shoe",
-   "Use": "Running, walking, gym"
-  },
-  "images": [
-   "images/p9-1.svg",
-   "images/p9-2.svg",
-   "images/p9-3.svg",
-   "images/p9-4.svg",
-   "images/p9-5.svg"
-  ]
- },
- {
-  "id": 10,
-  "name": "10000mAh Fast Charging Power Bank",
-  "category": "Electronics",
-  "price": 1199,
-  "old": 1599,
-  "icon": "fa-mobile-screen",
-  "color": "#3b82f6",
-  "sku": "UC-PB-010",
-  "short": "Slim 10000mAh power bank with 20W fast charging.",
-  "description": "A slim, pocket-friendly power bank with 10000mAh capacity and 20W fast charging over USB-C. Two output ports let you charge two devices together, and built-in protections guard against overcharging and overheating.",
-  "features": [
-   "10000mAh capacity",
-   "20W USB-C fast charging",
-   "Dual output ports",
-   "Overcharge and short-circuit protection",
-   "LED battery indicator"
-  ],
-  "specs": {
-   "Capacity": "10000 mAh",
-   "Output": "20W USB-C PD, 12W USB-A",
-   "Input": "USB-C, 18W",
-   "Weight": "210 g",
-   "In the box": "Power bank, USB-C cable"
-  },
-  "images": [
-   "images/p10-1.svg",
-   "images/p10-2.svg",
-   "images/p10-3.svg",
-   "images/p10-4.svg",
-   "images/p10-5.svg"
-  ]
- }
+    {
+        "id": 1,
+        "name": "Wireless Bluetooth Headphones",
+        "category": "Electronics",
+        "price": 1999,
+        "old": 2799,
+        "icon": "fa-headphones",
+        "color": "#6366f1",
+        "sku": "UC-HP-001",
+        "short": "Over-ear Bluetooth headphones with deep bass and 30 hours of battery.",
+        "description": "Comfortable over-ear headphones tuned for rich bass and clear vocals. The soft memory-foam ear cushions and adjustable headband make long listening sessions easy, and the built-in microphone lets you take calls without reaching for your phone. A single charge gives up to 30 hours of playback, and a wired audio cable is included for backup.",
+        "features": [
+            "Bluetooth 5.3 wireless connection",
+            "Up to 30 hours of playback",
+            "Built-in microphone for calls",
+            "Foldable design with carry pouch",
+            "AUX cable included"
+        ],
+        "specs": {
+            "Type": "Over-ear, wireless",
+            "Battery": "30 hours",
+            "Charging": "USB-C, about 2 hours",
+            "Weight": "250 g",
+            "In the box": "Headphones, USB-C cable, AUX cable, pouch"
+        },
+        "images": [
+            "images/p1-1.svg",
+            "images/p1-2.svg",
+            "images/p1-3.svg",
+            "images/p1-4.svg",
+            "images/p1-5.svg"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Classic Analog Wrist Watch",
+        "category": "Accessories",
+        "price": 1499,
+        "old": 1999,
+        "icon": "fa-clock",
+        "color": "#0ea5e9",
+        "sku": "UC-WT-002",
+        "short": "Minimal stainless steel watch with a genuine leather strap.",
+        "description": "A clean, minimal analog watch that suits both office and casual wear. The stainless steel case is paired with a genuine leather strap and a scratch-resistant glass face. Quartz movement keeps accurate time, and the watch is splash resistant for everyday use.",
+        "features": [
+            "Stainless steel case",
+            "Genuine leather strap",
+            "Scratch-resistant glass",
+            "Quartz movement",
+            "Splash resistant"
+        ],
+        "specs": {
+            "Case size": "40 mm",
+            "Strap": "Genuine leather, 20 mm",
+            "Movement": "Quartz",
+            "Water resistance": "Splash resistant (not for swimming)",
+            "In the box": "Watch, gift box"
+        },
+        "images": [
+            "images/p2-1.svg",
+            "images/p2-2.svg",
+            "images/p2-3.svg",
+            "images/p2-4.svg",
+            "images/p2-5.svg"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Everyday Laptop Backpack 25L",
+        "category": "Accessories",
+        "price": 1299,
+        "old": 1799,
+        "icon": "fa-bag-shopping",
+        "color": "#f59e0b",
+        "sku": "UC-BP-003",
+        "short": "Water-resistant 25L backpack with a padded laptop compartment.",
+        "description": "A practical 25 litre backpack for work, college and short trips. The padded compartment fits laptops up to 15.6 inches, and the water-resistant fabric protects your things in light rain. Multiple pockets keep chargers, bottles and documents organised, while padded straps spread the weight comfortably.",
+        "features": [
+            "Fits laptops up to 15.6 inches",
+            "Water-resistant fabric",
+            "Padded shoulder straps and back panel",
+            "Multiple organiser pockets",
+            "Side pockets for bottles"
+        ],
+        "specs": {
+            "Capacity": "25 litres",
+            "Material": "Water-resistant polyester",
+            "Laptop size": "Up to 15.6 inches",
+            "Weight": "600 g",
+            "Dimensions": "46 x 31 x 17 cm"
+        },
+        "images": [
+            "images/p3-1.svg",
+            "images/p3-2.svg",
+            "images/p3-3.svg",
+            "images/p3-4.svg",
+            "images/p3-5.svg"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "UV Protection Polarized Sunglasses",
+        "category": "Accessories",
+        "price": 799,
+        "old": 1199,
+        "icon": "fa-glasses",
+        "color": "#10b981",
+        "sku": "UC-SG-004",
+        "short": "Lightweight polarized sunglasses with 100% UV protection.",
+        "description": "Lightweight sunglasses with polarized lenses that cut glare and block harmful UV rays. The flexible frame is comfortable for all-day wear and works well for driving, travel and outdoor activities. A protective case and cleaning cloth are included.",
+        "features": [
+            "Polarized lenses reduce glare",
+            "100% UV400 protection",
+            "Lightweight flexible frame",
+            "Case and cloth included"
+        ],
+        "specs": {
+            "Lens": "Polarized, UV400",
+            "Frame": "Lightweight TR90",
+            "Weight": "28 g",
+            "In the box": "Sunglasses, hard case, cleaning cloth"
+        },
+        "images": [
+            "images/p4-1.png",
+            "images/p4-2.png"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Insulated Steel Water Bottle 750ml",
+        "category": "Home & Kitchen",
+        "price": 599,
+        "old": 899,
+        "icon": "fa-bottle-water",
+        "color": "#14b8a6",
+        "sku": "UC-WB-005",
+        "short": "Double-wall insulated bottle keeps drinks cold 24h and hot 12h.",
+        "description": "A durable stainless steel bottle with double-wall vacuum insulation that keeps water cold for up to 24 hours and hot drinks warm for up to 12 hours. The leak-proof lid and powder-coated body make it ideal for the gym, office or travel.",
+        "features": [
+            "Keeps cold for 24 hours, hot for 12 hours",
+            "Food-grade stainless steel",
+            "Leak-proof lid",
+            "Powder-coated grip finish",
+            "BPA free"
+        ],
+        "specs": {
+            "Capacity": "750 ml",
+            "Material": "304 stainless steel",
+            "Insulation": "Double-wall vacuum",
+            "Weight": "380 g",
+            "Care": "Hand wash recommended"
+        },
+        "images": [
+            "images/bottel1.png",
+            "images/bottel2.png"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Slim Wireless Keyboard",
+        "category": "Electronics",
+        "price": 1699,
+        "old": 2299,
+        "icon": "fa-keyboard",
+        "color": "#8b5cf6",
+        "sku": "UC-KB-006",
+        "short": "Slim wireless keyboard with quiet keys, works with all devices.",
+        "description": "A slim, quiet keyboard that connects over Bluetooth to laptops, tablets and phones and can switch between devices. Low-profile keys feel comfortable for long typing sessions, and a rechargeable battery lasts for weeks on a single charge.",
+        "features": [
+            "Bluetooth connection to up to 3 devices",
+            "Quiet low-profile keys",
+            "Rechargeable battery",
+            "Works with Windows, macOS, Android and iOS"
+        ],
+        "specs": {
+            "Connection": "Bluetooth 5.0",
+            "Battery": "Rechargeable, up to 3 weeks",
+            "Layout": "Full size with number pad",
+            "Weight": "480 g",
+            "Compatibility": "Windows, macOS, Android, iOS"
+        },
+        "images": [
+            "images/p6-1.svg",
+            "images/p6-2.svg",
+            "images/p6-3.svg",
+            "images/p6-4.svg",
+            "images/p6-5.svg"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Matte Ceramic Coffee Mug",
+        "category": "Home & Kitchen",
+        "price": 349,
+        "old": 499,
+        "icon": "fa-mug-hot",
+        "color": "#ef4444",
+        "sku": "UC-MG-007",
+        "short": "350ml matte ceramic mug, microwave and dishwasher safe.",
+        "description": "A sturdy 350 ml ceramic mug with a smooth matte finish and a comfortable handle. It holds heat well, is safe for both the microwave and the dishwasher, and looks good on any desk or kitchen shelf.",
+        "features": [
+            "Smooth matte finish",
+            "Microwave and dishwasher safe",
+            "Comfortable wide handle",
+            "Lead-free glaze"
+        ],
+        "specs": {
+            "Capacity": "350 ml",
+            "Material": "Ceramic",
+            "Care": "Microwave and dishwasher safe",
+            "Weight": "340 g"
+        },
+        "images": [
+            "images/p7-1.svg",
+            "images/p7-2.svg",
+            "images/p7-3.svg",
+            "images/p7-4.svg",
+            "images/p7-5.svg"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Combed Cotton Crew T-Shirt",
+        "category": "Fashion",
+        "price": 549,
+        "old": 799,
+        "icon": "fa-shirt",
+        "color": "#ec4899",
+        "sku": "UC-TS-008",
+        "short": "Soft 100% combed cotton t-shirt with a relaxed everyday fit.",
+        "description": "A soft, breathable t-shirt made from 100% combed cotton. The relaxed regular fit and reinforced stitching keep it comfortable and long lasting through repeated washes, making it an easy everyday basic.",
+        "features": [
+            "100% combed cotton",
+            "Regular relaxed fit",
+            "Reinforced neck and seams",
+            "Machine washable"
+        ],
+        "specs": {
+            "Fabric": "100% combed cotton, 180 GSM",
+            "Fit": "Regular",
+            "Neck": "Crew neck",
+            "Care": "Machine wash cold, do not bleach"
+        },
+        "images": [
+            "images/p8-1.svg",
+            "images/p8-2.svg",
+            "images/p8-3.svg",
+            "images/p8-4.svg",
+            "images/p8-5.svg"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Lightweight Running Shoes",
+        "category": "Footwear",
+        "price": 2299,
+        "old": 3199,
+        "icon": "fa-shoe-prints",
+        "color": "#f97316",
+        "sku": "UC-SH-009",
+        "short": "Breathable lightweight running shoes with cushioned soles.",
+        "description": "Lightweight running shoes with a breathable mesh upper and a cushioned midsole that absorbs impact on every stride. The grippy outsole holds well on roads and tracks, making these suitable for daily runs, walks and gym sessions.",
+        "features": [
+            "Breathable mesh upper",
+            "Cushioned midsole",
+            "Grippy rubber outsole",
+            "Lightweight build"
+        ],
+        "specs": {
+            "Upper": "Breathable mesh",
+            "Sole": "EVA midsole, rubber outsole",
+            "Weight": "About 280 g per shoe",
+            "Use": "Running, walking, gym"
+        },
+        "images": [
+            "images/p9-1.svg",
+            "images/p9-2.svg",
+            "images/p9-3.svg",
+            "images/p9-4.svg",
+            "images/p9-5.svg"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "10000mAh Fast Charging Power Bank",
+        "category": "Electronics",
+        "price": 1199,
+        "old": 1599,
+        "icon": "fa-mobile-screen",
+        "color": "#3b82f6",
+        "sku": "UC-PB-010",
+        "short": "Slim 10000mAh power bank with 20W fast charging.",
+        "description": "A slim, pocket-friendly power bank with 10000mAh capacity and 20W fast charging over USB-C. Two output ports let you charge two devices together, and built-in protections guard against overcharging and overheating.",
+        "features": [
+            "10000mAh capacity",
+            "20W USB-C fast charging",
+            "Dual output ports",
+            "Overcharge and short-circuit protection",
+            "LED battery indicator"
+        ],
+        "specs": {
+            "Capacity": "10000 mAh",
+            "Output": "20W USB-C PD, 12W USB-A",
+            "Input": "USB-C, 18W",
+            "Weight": "210 g",
+            "In the box": "Power bank, USB-C cable"
+        },
+        "images": [
+            "images/p10-1.svg",
+            "images/p10-2.svg",
+            "images/p10-3.svg",
+            "images/p10-4.svg",
+            "images/p10-5.svg"
+        ]
+    }
 ]

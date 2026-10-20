@@ -1,50 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Checkout</title>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Checkout</title><meta name="description" content="Secure checkout.">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header><div class="container nav">
-  <a href="index.html" class="logo"><i class="fa-solid fa-store"></i><span data-site-name>Store</span></a>
-  <button class="cart-btn" id="cartBtn" aria-label="Cart"><i class="fa-solid fa-bag-shopping"></i><span id="cartCount">0</span></button>
+<link rel="stylesheet" href="style.css"></head><body>
+<div class="topbar"><i class="fa-solid fa-truck-fast"></i> Free shipping on orders above <span data-free>Rs 999</span> &nbsp;|&nbsp; 7-day easy returns</div>
+<header class="site"><div class="container nav">
+<a href="index.html" class="logo"><i class="fa-solid fa-store"></i><span data-site-name>Store</span></a>
+<form class="search" action="shop.html"><input name="q" placeholder="Search for products" aria-label="Search"><button aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button></form>
+<nav class="menu"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></nav>
+<button class="cart-btn" id="cartBtn" aria-label="Cart"><i class="fa-solid fa-bag-shopping"></i><span id="cartCount">0</span></button>
 </div></header>
 
+<div class="pagehead"><div class="container"><div class="crumbs"><a href="index.html">Home</a> / <a href="cart.html">Cart</a> / Checkout</div><h1>Checkout</h1></div></div>
 <div class="container checkout" id="checkoutPage">
-  <form class="box" onsubmit="placeOrder(event)">
-    <h2 style="margin-bottom:16px">Checkout</h2>
-    <div class="error" id="err"></div>
-    <h3>Shipping details</h3>
-    <div class="f">
-      <input required placeholder="Full name">
-      <input required type="tel" placeholder="Phone number">
-      <input class="full" required type="email" placeholder="Email address">
-      <input class="full" required placeholder="Street address">
-      <input required placeholder="City">
-      <input required placeholder="State">
-      <input class="full" required placeholder="PIN code" pattern="[0-9]{6}" title="6 digit PIN code">
-    </div>
-    <h3 style="margin-top:22px">Payment</h3>
-    <div class="f">
-      <input class="full" required placeholder="Card number" inputmode="numeric" maxlength="19">
-      <input required placeholder="MM / YY" maxlength="7">
-      <input required placeholder="CVV" type="password" maxlength="4">
-      <input class="full" required placeholder="Name on card">
-    </div>
-    <button class="btn block" id="payBtn" style="margin-top:20px"><i class="fa-solid fa-lock"></i> Pay Now</button>
-  </form>
-
-  <div class="box" style="align-self:start">
-    <h3>Order summary</h3>
-    <div id="summaryItems"></div>
-    <div id="summaryTotals" style="margin-top:12px"></div>
-  </div>
+<form class="box" onsubmit="placeOrder(event)">
+<div class="error" id="err"></div>
+<h3>Delivery details</h3>
+<div class="f">
+<input required placeholder="Full name"><input required type="tel" placeholder="Phone number">
+<input class="full" required type="email" placeholder="Email address">
+<input class="full" required placeholder="Street address, apartment, landmark">
+<input required placeholder="City"><input required placeholder="State">
+<input class="full" required placeholder="PIN code" pattern="[0-9]{6}" title="6 digit PIN code">
 </div>
-
-<footer><div class="container"><div class="copy">© <span data-year></span> <span data-site-name>Store</span> · <a href="privacy.html" style="display:inline">Privacy</a> · <a href="terms.html" style="display:inline">Terms</a> · <a href="refund.html" style="display:inline">Refunds</a></div></div></footer>
-<script src="script.js"></script>
-</body>
-</html>
+<h3 style="margin-top:24px">Payment</h3>
+<div class="notice"><i class="fa-solid fa-circle-info"></i> We are currently setting up our online payment system. Payments may be unavailable for now.</div>
+<button class="btn block" id="payBtn" style="margin-top:14px"><i class="fa-solid fa-lock"></i> Place Order</button>
+</form>
+<div class="box" style="align-self:start"><h3>Order summary</h3><div id="summaryItems"></div><div id="summaryTotals" style="margin-top:10px"></div></div>
+</div>
+<footer class="site"><div class="container"><div class="fgrid">
+<div><h4 data-site-name>Store</h4><p data-tagline style="color:#94a3b8"></p></div>
+<div><h4>Shop</h4><a href="shop.html">All Products</a><a href="shop.html?cat=Electronics">Electronics</a><a href="shop.html?cat=Accessories">Accessories</a><a href="shop.html?cat=Home%20%26%20Kitchen">Home &amp; Kitchen</a></div>
+<div><h4>Company</h4><a href="about.html">About Us</a><a href="faq.html">FAQ</a><a href="contact.html">Contact Us</a><a href="shipping.html">Shipping Policy</a><a href="refund.html">Refund &amp; Return Policy</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a></div>
+<div><h4>Contact</h4><a data-mailto href="#"><i class="fa-solid fa-envelope"></i> <span data-email></span></a><a href="contact.html"><i class="fa-solid fa-phone"></i> <span data-phone></span></a><a href="contact.html"><i class="fa-solid fa-location-dot"></i> <span data-address></span></a></div>
+</div><div class="copy">&copy; <span data-year></span> <span data-site-name>Store</span>. All rights reserved.</div></div></footer>
+<script src="script.js"></script></body></html>

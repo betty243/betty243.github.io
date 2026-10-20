@@ -1,10 +1,11 @@
 {
   "siteName": "Urban Cart",
-  "tagline": "Simple, quality products delivered to your door",
+  "tagline": "Quality everyday products, delivered across India",
   "currency": "₹",
-  "email": "urbancart243@gmail.com",
-  "phone": "+91 8645965645",
-  "address": "New delhi, 110001, India",
+  "email": "support@yourdomain.com",
+  "phone": "+91 00000 00000",
+  "address": "Your full business address, City, State, PIN, India",
+  "hours": "Monday to Saturday, 10:00 AM to 6:00 PM IST",
   "freeShippingAbove": 999,
   "shippingFee": 49
 }

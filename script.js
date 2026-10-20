@@ -25,7 +25,7 @@ async function init() {
 }
 
 function thumb(p) {
-  return `<div class="thumb" style="background:linear-gradient(135deg,${p.color},${p.color}aa)"><i class="fa-solid ${p.icon}"></i>${p.image ? `<img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.remove()">` : ''}</div>`;
+  return `<div class="thumb" style="background:linear-gradient(135deg,${p.color},${p.color}aa)"><i class="fa-solid ${p.icon}"></i>${p.images ? `<img src="${p.images[0]}" alt="${p.name}" loading="lazy" onerror="this.remove()">` : ''}</div>`;
 }
 function card(p) {
   return `<div class="card"><span class="badge">${off(p)}% OFF</span>
@@ -63,6 +63,9 @@ function renderShop(cats) {
   $('#shopGrid').innerHTML = list.length ? list.map(card).join('') : '<div class="empty" style="grid-column:1/-1">No products found. <a href="shop.html" style="color:#4f46e5">View all products</a></div>';
 }
 
+function galTo(i) { const t = $('#track'); t.scrollTo({ left: i * t.clientWidth, behavior: 'smooth' }); }
+function galGo(d) { const t = $('#track'); galTo(Math.max(0, Math.min(t.children.length - 1, Math.round(t.scrollLeft / t.clientWidth) + d))); }
+function galScroll() { const t = $('#track'); const i = Math.round(t.scrollLeft / t.clientWidth); document.querySelectorAll('#thumbs img').forEach((e, k) => e.classList.toggle('on', k === i)); }
 let pdQty = 1;
 function renderProduct() {
   const p = getP(param('id'));
@@ -70,7 +73,10 @@ function renderProduct() {
   document.title = p.name + ' | ' + CFG.siteName;
   $('#crumb').innerHTML = `<a href="index.html">Home</a> / <a href="shop.html?cat=${encodeURIComponent(p.category)}">${p.category}</a> / ${p.name}`;
   $('#productDetail').innerHTML = `
-    <div style="position:relative"><span class="badge">${off(p)}% OFF</span>${thumb(p)}</div>
+    ${p.images && p.images.length ? `<div class="gallery"><span class="badge">${off(p)}% OFF</span>
+      <div class="track" id="track" onscroll="galScroll()">${p.images.map(s => `<img src="${s}" alt="${p.name}">`).join('')}</div>
+      <button class="gnav prev" onclick="galGo(-1)" aria-label="Previous">&#8249;</button><button class="gnav next" onclick="galGo(1)" aria-label="Next">&#8250;</button>
+      <div class="thumbs" id="thumbs">${p.images.map((s, i) => `<img src="${s}" class="${i ? '' : 'on'}" onclick="galTo(${i})" alt="">`).join('')}</div></div>` : `<div style="position:relative"><span class="badge">${off(p)}% OFF</span>${thumb(p)}</div>`}
     <div>
       <span class="cat-l" style="color:#64748b;text-transform:uppercase;font-size:.8rem">${p.category}</span>
       <h1>${p.name}</h1>
@@ -122,7 +128,7 @@ function totalsHTML(t) {
     <div class="row"><span>Shipping</span><span>${t.ship ? money(t.ship) : 'Free'}</span></div>
     <div class="row total"><span>Total</span><span>${money(t.total)}</span></div>`;
 }
-function miniThumb(p) { return `<div class="mini" style="background:${p.color}"><i class="fa-solid ${p.icon}"></i>${p.image ? `<img src="${p.image}" alt="" onerror="this.remove()">` : ''}</div>`; }
+function miniThumb(p) { return `<div class="mini" style="background:${p.color}"><i class="fa-solid ${p.icon}"></i>${p.images ? `<img src="${p.images[0]}" alt="" onerror="this.remove()">` : ''}</div>`; }
 function lineHTML(i, controls) {
   const p = getP(i.id); if (!p) return '';
   return `<div class="citem">${miniThumb(p)}
